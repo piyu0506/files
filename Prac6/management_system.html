@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>jemil Management System</title>
+</head>
+<body>
+  <div id="login-section">
+    <input id="username" type="text" />
+    <input id="password" type="password" />
+    <button id="login-btn">Login</button>
+  </div>
+  <div id="dashboard" style="display:none">
+    <span id="user-display"></span>
+  </div>
+  <div id="message"></div>
+  <script>
+    document.getElementById('login-btn').addEventListener('click', function () {
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      const dashboard = document.getElementById('dashboard');
+      const loginSection = document.getElementById('login-section');
+      const message = document.getElementById('message');
+      const userDisplay = document.getElementById('user-display');
+
+      if (username === 'admin' && password === 'admin123') {
+        loginSection.style.display = 'none';
+        dashboard.style.display = 'block';
+        userDisplay.textContent = username;
+        message.textContent = '';
+      } else {
+        dashboard.style.display = 'none';
+        message.textContent = 'Invalid credentials!';
+      }
+    });
+  </script>
+</body>
+</html>

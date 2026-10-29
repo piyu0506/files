@@ -1,0 +1,26 @@
+# Ignore generated project artifacts and local env folders
+**/.venv*/
+**/venv/
+**/__pycache__/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.coverage
+**/*.pyc
+**/*.pyo
+**/*.class
+**/target/
+**/build/
+**/dist/
+**/*.log
+**/*.tar.gz
+**/*.jar
+**/*.zip
+**/*.png
+**/mutants/
+**/apache-maven-*/
+**/.github/
+**/.idea/
+**/.vscode/
+**/chromedriver*
+**/geckodriver*
+**/screenshot*
